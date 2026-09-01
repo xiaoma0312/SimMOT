@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use SimMOT in your research, please cite this dataset and the associated paper when available."
+title: "SimMOT v1.0: A synthetic UAV-view multi-vehicle tracking dataset with state-derived theoretical ground truth"
+type: dataset
+authors:
+  - family-names: "Xu"
+    given-names: "Huizhi"
+  - family-names: "Ma"
+    given-names: "Qi"
+version: "1.0"
+date-released: 2026-09-01
+license: CC-BY-4.0
+keywords:
+  - multi-object tracking
+  - vehicle tracking
+  - UAV viewpoint
+  - synthetic dataset
+  - state-derived ground truth

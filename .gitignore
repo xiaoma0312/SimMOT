@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Full sequence data are distributed as external road-level archives.
+/R1_3lane_L*/
+/R2_5lane_L*/
+/R3_7lane_L*/
+/SimMOT_v1.0_R*.zip

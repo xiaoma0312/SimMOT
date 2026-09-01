@@ -1,0 +1,21 @@
+{
+  "dataset": "SimMOT",
+  "dataset_version": "1.0",
+  "generated_utc": "2026-08-31T12:16:45+00:00",
+  "sequence_count": 15,
+  "passed_sequence_count": 15,
+  "all_sequences_passed": true,
+  "total_frames": 27000,
+  "total_duration_sec": 900.0,
+  "total_gt_boxes": 553646,
+  "total_visible_vehicle_trajectories": 2390,
+  "checks": [
+    "1,800 JPEG frames per sequence with continuous six-digit filenames",
+    "JPEG readability and 1980x1020 dimensions",
+    "MOT row schema, frame range/order, finite positive in-image bbox values",
+    "positive sequence-local GT IDs and no duplicate (frame,id) pairs",
+    "clean detection ID=-1, score=1.0, and exact frame/bbox agreement with GT",
+    "visible/all-active state CSV schemas and visible-state agreement with GT",
+    "scenario metadata and the corrected R1_3lane_L4 parameters"
+  ]
+}

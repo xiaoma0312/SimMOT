@@ -1,0 +1,28 @@
+SimMOT Dataset License
+
+Except where otherwise noted, the SimMOT dataset is licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+This license applies to the dataset content distributed as part of SimMOT,
+including:
+
+- generated image sequences;
+- ground-truth annotations;
+- clean detection inputs;
+- vehicle-state data;
+- sequence metadata and validation data;
+- configuration data describing the released dataset;
+- author-created vehicle images, road/background images, and other visual assets;
+- dataset documentation.
+
+Copyright (c) 2026 SimMOT authors (Xu Huizhi and Ma Qi)
+
+Under CC BY 4.0, users may share and adapt the licensed material for any
+purpose, including commercial use, provided that appropriate attribution is
+given, a link to the license is provided, and changes are indicated.
+
+Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/
+
+Legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode

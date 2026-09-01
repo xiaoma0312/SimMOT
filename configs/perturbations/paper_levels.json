@@ -1,0 +1,80 @@
+{
+  "version": "SimMOT v1.0",
+  "paper_selected_sequences": [
+    "R1_3lane_L3",
+    "R1_3lane_L5",
+    "R3_7lane_L3"
+  ],
+  "miss": {
+    "type": "independent_detection_deletion",
+    "rates": [
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ]
+  },
+  "jitter": {
+    "type": "center_only_gaussian",
+    "sigma_px": [
+      1.0,
+      3.0,
+      5.0,
+      8.0
+    ],
+    "width_height_unchanged": true
+  },
+  "shift": {
+    "type": "fixed_2d_offset",
+    "offsets_px": {
+      "x05": [
+        5.0,
+        0.0
+      ],
+      "y05": [
+        0.0,
+        5.0
+      ],
+      "xy05": [
+        5.0,
+        5.0
+      ],
+      "xy10": [
+        10.0,
+        10.0
+      ]
+    }
+  },
+  "scale": {
+    "type": "synchronized_uniform_scale",
+    "amplitudes": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "factor_definition": "s ~ Uniform(1-a, 1+a)"
+  },
+  "seed_stability": {
+    "paper_samples": [
+      "baseline",
+      "seed21",
+      "seed42"
+    ],
+    "evaluated_variants": [
+      "miss30",
+      "jitter08",
+      "scale20"
+    ],
+    "public_seed_derivation": {
+      "method": "MD5-based deterministic derivation",
+      "template": "{seed}_{sequence}_{variant}_{tag}_simmot_det_seed_folder",
+      "digest_to_integer": "first 8 hexadecimal characters converted to integer"
+    },
+    "reproduction": {
+      "seed21": "reproducible from released scripts",
+      "seed42": "reproducible from released scripts",
+      "baseline": "frozen historical files are authoritative"
+    },
+    "note": "Fixed position shift is deterministic and is not part of the random-sample stability analysis."
+  }
+}

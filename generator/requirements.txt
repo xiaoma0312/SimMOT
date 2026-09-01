@@ -1,0 +1,4 @@
+# Exact original generation package versions were not archived.
+# These compatible ranges cover the current generator API usage.
+numpy>=1.24,<3.0
+opencv-python>=4.8,<5.0

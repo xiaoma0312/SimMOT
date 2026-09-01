@@ -1,0 +1,15 @@
+{
+  "name": "noise_none",
+  "enabled": false,
+  "miss_rate": 0.0,
+  "bbox_jitter_std_px": 0.0,
+  "center_shift_px": [
+    0.0,
+    0.0
+  ],
+  "scale_noise_std": 0.0,
+  "false_positive_rate_per_frame": 0.0,
+  "confidence_mean": 1.0,
+  "confidence_std": 0.0,
+  "note": "No perturbation. det_noisy.txt is written as a reproducible copy of ideal detections."
+}

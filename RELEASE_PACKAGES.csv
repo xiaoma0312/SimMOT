@@ -1,0 +1,4 @@
+filename,sha256,size_bytes,size_gib,sequences,zip_entry_count,under_github_release_2gib_limit
+SimMOT_v1.0_R1_3lane.zip,880c758ecce49162223e7e6b055410cd5c278fd84cbd588164efc39917cb6fca,4254794120,3.963,R1_3lane_L1 R1_3lane_L2 R1_3lane_L3 R1_3lane_L4 R1_3lane_L5,9038,false
+SimMOT_v1.0_R2_5lane.zip,365c4ee4a56d6a5588e6f275ba87c0ecddf8f6eec67647c593cf8cc8e55cc41a,4384205658,4.083,R2_5lane_L1 R2_5lane_L2 R2_5lane_L3 R2_5lane_L4 R2_5lane_L5,9038,false
+SimMOT_v1.0_R3_7lane.zip,68dca6e977bc355c5ce263ccdde3b7a66169475b04c97f3a27270484c31f2f11,4513384431,4.203,R3_7lane_L1 R3_7lane_L2 R3_7lane_L3 R3_7lane_L4 R3_7lane_L5,9038,false

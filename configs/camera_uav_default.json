@@ -1,0 +1,7 @@
+{
+  "view_type": "top_down_uav",
+  "meters_per_pixel": 0.10,
+  "vehicle_mpp": 0.050,
+  "sprite_scale_factor": 1.00,
+  "note": "meters_per_pixel controls motion scale; vehicle_mpp controls rendered vehicle size and label size."
+}
