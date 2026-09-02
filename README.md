@@ -34,23 +34,24 @@ SimMOT v1.0 data.
 The GitHub repository is intentionally lightweight: it contains the project
 homepage, generator, configurations, documentation, tools, validation summaries,
 and release metadata, but not the 15 sequence directories or their 27,000 JPEG
-frames. The complete sequence data are distributed in three road-level archives:
+frames. SimMOT v1.0 is distributed as 15 sequence-level archives, one archive
+per sequence:
 
 ```text
-SimMOT_v1.0_R1_3lane.zip  # R1_3lane_L1 ... R1_3lane_L5
-SimMOT_v1.0_R2_5lane.zip  # R2_5lane_L1 ... R2_5lane_L5
-SimMOT_v1.0_R3_7lane.zip  # R3_7lane_L1 ... R3_7lane_L5
+SimMOT_v1.0_R1_3lane_L1.zip ... SimMOT_v1.0_R1_3lane_L5.zip
+SimMOT_v1.0_R2_5lane_L1.zip ... SimMOT_v1.0_R2_5lane_L5.zip
+SimMOT_v1.0_R3_7lane_L1.zip ... SimMOT_v1.0_R3_7lane_L5.zip
 ```
 
-Each archive contains `LICENSE-DATA`, `VERSION`, its five sequence directories,
-and an internal `PACKAGE_SHA256SUMS_*.csv`. Archive sizes and SHA-256 values are
-listed in [RELEASE_PACKAGES.csv](RELEASE_PACKAGES.csv). The full-tree
-`SHA256SUMS.csv` remains the
-canonical manifest after the selected archives are extracted directly into the
-lightweight repository root. Persistent download URLs/DOI must be added after
-the archives are deposited; no temporary or invented identifier is supplied here.
-See [docs/DISTRIBUTION.md](docs/DISTRIBUTION.md) for extraction and hosting
-details.
+Each ZIP contains exactly one top-level sequence directory and preserves that
+sequence's internal layout without additional archive entries. Every ZIP is
+smaller than 2 GB. Archive sizes and SHA-256 values are listed in
+[RELEASE_PACKAGES.csv](RELEASE_PACKAGES.csv). The full-tree `SHA256SUMS.csv`
+remains the canonical file manifest after the selected archives are extracted
+directly into the lightweight repository root. Persistent download URLs/DOI must
+be added after deposit; no temporary or invented identifier is supplied here.
+See [docs/DISTRIBUTION.md](docs/DISTRIBUTION.md) for verification, extraction,
+and hosting details.
 
 ## Sequence layout
 
@@ -253,5 +254,6 @@ public archive is created.
 `LICENSE`和`LICENSE-DATA`。
 
 GitHub主仓库仅包含代码、配置、文档、工具和数据元信息，不普通提交15个序列
-及其27,000张JPEG。完整数据按R1、R2和R3分成三个道路级ZIP发布，文件大小和
-SHA-256见`RELEASE_PACKAGES.csv`，下载与解压说明见`docs/DISTRIBUTION.md`。
+及其27,000张JPEG。完整数据按15个正式序列分别打包为15个ZIP，每个ZIP仅含
+一个序列且小于2 GB。文件大小和SHA-256见`RELEASE_PACKAGES.csv`，下载与
+解压说明见`docs/DISTRIBUTION.md`。
