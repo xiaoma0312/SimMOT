@@ -34,8 +34,11 @@ SimMOT v1.0 data.
 The GitHub repository is intentionally lightweight: it contains the project
 homepage, generator, configurations, documentation, tools, validation summaries,
 and release metadata, but not the 15 sequence directories or their 27,000 JPEG
-frames. SimMOT v1.0 is distributed as 15 sequence-level archives, one archive
-per sequence:
+frames.
+
+The complete SimMOT v1.0 dataset is distributed through the
+[SimMOT v1.0 GitHub Release](https://github.com/xiaoma0312/SimMOT/releases/tag/v1.0.0)
+as 15 sequence-level ZIP archives, one archive per sequence:
 
 ```text
 SimMOT_v1.0_R1_3lane_L1.zip ... SimMOT_v1.0_R1_3lane_L5.zip
@@ -45,13 +48,18 @@ SimMOT_v1.0_R3_7lane_L1.zip ... SimMOT_v1.0_R3_7lane_L5.zip
 
 Each ZIP contains exactly one top-level sequence directory and preserves that
 sequence's internal layout without additional archive entries. Every ZIP is
-smaller than 2 GB. Archive sizes and SHA-256 values are listed in
-[RELEASE_PACKAGES.csv](RELEASE_PACKAGES.csv). The full-tree `SHA256SUMS.csv`
-remains the canonical file manifest after the selected archives are extracted
-directly into the lightweight repository root. Persistent download URLs/DOI must
-be added after deposit; no temporary or invented identifier is supplied here.
+smaller than 2 GB.
+
+Archive sizes and SHA-256 values are listed in
+[RELEASE_PACKAGES.csv](RELEASE_PACKAGES.csv). The GitHub Release also provides
+`PACKAGE_ARCHIVES_SHA256.csv` for direct verification of the distributed ZIP
+archives.
+
+The full-tree `SHA256SUMS.csv` remains the canonical file manifest after the
+selected archives are extracted directly into the lightweight repository root.
+
 See [docs/DISTRIBUTION.md](docs/DISTRIBUTION.md) for verification, extraction,
-and hosting details.
+and release details.
 
 ## Sequence layout
 
@@ -238,22 +246,39 @@ Users may use, redistribute, and adapt the CC BY 4.0 licensed material,
 including for commercial purposes, provided that appropriate attribution is
 given and any modifications are indicated.
 
-For academic use, please also cite SimMOT using the information provided in
-[`CITATION.cff`](CITATION.cff). A DOI or repository URL can be added after the
-public archive is created.
+## Citation
+
+For academic use, please cite SimMOT using the information provided in
+[`CITATION.cff`](CITATION.cff).
+
+Project repository:
+
+```text
+https://github.com/xiaoma0312/SimMOT
+```
+
+Dataset release:
+
+```text
+https://github.com/xiaoma0312/SimMOT/releases/tag/v1.0.0
+```
+
+No DOI is assigned to SimMOT v1.0 at this time.
 
 ## 中文说明
 
-本目录是唯一的公开数据母版，正式名称为 **SimMOT v1.0**。公开范围仅包括
-15组基础序列、理论真实标签、无扰动检测、状态表、生成配置、最终生成代码、
-作者自制素材、验证文件、受控检测扰动工具和参数定义；不包括UAVDT实验、
-预生成扰动输入、扰动实验结果、跟踪器输出、历史备份和其他论文工程文件。
+本目录是 **SimMOT v1.0** 的公开 GitHub 仓库。公开范围包括15组基础序列、
+理论真实标签、无扰动检测、状态表、生成配置、最终生成代码、作者自制素材、
+验证文件、受控检测扰动工具和参数定义；不包括 UAVDT 实验、预生成扰动输入、
+扰动实验结果、跟踪器输出、历史备份和其他论文工程文件。
 
-许可证采用双许可结构：源代码使用MIT许可证；数据集、生成图像、标注、状态
-数据、配置、文档和作者自制视觉素材使用CC BY 4.0许可证。详见根目录的
-`LICENSE`和`LICENSE-DATA`。
+源代码使用 MIT 许可证；数据集、生成图像、标注、状态数据、配置、文档和作者
+自制视觉素材使用 CC BY 4.0 许可证。详见根目录的 `LICENSE` 和
+`LICENSE-DATA`。
 
-GitHub主仓库仅包含代码、配置、文档、工具和数据元信息，不普通提交15个序列
-及其27,000张JPEG。完整数据按15个正式序列分别打包为15个ZIP，每个ZIP仅含
-一个序列且小于2 GB。文件大小和SHA-256见`RELEASE_PACKAGES.csv`，下载与
-解压说明见`docs/DISTRIBUTION.md`。
+GitHub 主仓库仅保存代码、配置、文档、工具和数据元信息，不普通提交15个序列
+及其27,000张 JPEG。完整数据已通过
+[SimMOT v1.0 GitHub Release](https://github.com/xiaoma0312/SimMOT/releases/tag/v1.0.0)
+发布，并按15个正式序列分别打包为15个 ZIP。每个 ZIP 仅包含一个序列且小于
+2 GB。文件大小和 SHA-256 见 `RELEASE_PACKAGES.csv`，下载、校验和解压说明见
+`docs/DISTRIBUTION.md`。
